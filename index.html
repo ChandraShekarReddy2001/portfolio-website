@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chandu's Portfolio Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(15, 15, 75);
+      color: white;
+      font-family: "Poppins", sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(71, 71, 144);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      color: rgb(170, 128, 209);
+      font-size: 1.01rem;
+    }
+
+    main hr {
+      border: 0;
+      background-color: rgb(170, 128, 209);
+      height: 1.2px;
+      margin: 0px 84px
+    }
+
+    .left {
+      font-size: 1.5rem;
+    }
+
+    .firstSection {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 70px 0;
+      align-items: center;
+    }
+
+    .firstSection>div {
+      width: 30%;
+    }
+
+    .leftSection {
+      font-size: 2rem;
+      margin-left: 10px;
+      padding-left: 30px
+    }
+
+    .leftSection .buttons {
+      padding: 30px 0;
+    }
+
+    .leftSection .btn {
+
+      background-color: rgb(108, 108, 220);
+      color: white;
+      border: 1.5px solid white;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+      padding: 10px;
+      height: 50px;
+      margin-top: 10px;
+      margin-left: 5px;
+    }
+
+    .rightSection img {
+      width: 100%;
+    }
+
+    .purple {
+      color: rgb(108, 108, 220);
+    }
+
+    #element {
+      color: rgb(108, 108, 220);
+    }
+
+    .secondSection {
+      max-width: 80vw;
+      margin: 40px, 119.667px;
+    }
+
+    .secondSection h1 {
+      font-size: 1.7rem;
+    }
+
+    .text-grey {
+      color: grey;
+    }
+
+    .vertical-title {
+      margin-bottom: 10px;
+    }
+
+    .container-right {
+      height: auto;
+      /* Adjust as needed */
+      padding: 10px;
+      margin: 10px 10px;
+    }
+
+    .container-left {
+      display: flex;
+      height: auto;
+      /* Adjust as needed */
+    }
+
+    .container {
+      display: flex;
+      height: auto;
+      /* Adjust as needed */
+      margin: 10px 10px;
+    }
+
+    .column {
+      flex: 1;
+      padding: 10px;
+    }
+
+    ul {
+      columns: 3;
+      -webkit-columns: 3;
+      /* For Safari and older versions of Chrome */
+      -moz-columns: 3;
+      /* For Firefox */
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th,
+    td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .skills-section {
+      margin-bottom: 20px;
+    }
+
+    .skills-subsection {
+      margin-bottom: 10px;
+    }
+
+    .skills-subsection h3 {
+      margin-bottom: 5px;
+    }
+
+    .skills-subsection ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    .skills-subsection li {
+      margin-bottom: 5px;
+    }
+
+    footer {
+      background-color: rgb(24, 22, 22);
+    }
+
+    .footer {
+      display: flex;
+      padding: 23px 122px;
+      justify-content: space-evenly;
+    }
+
+    .footer ul {
+      list-style: none;
+    }
+
+    .footer>div {
+      width: 223px;
+    }
+
+    footer .footer-rights {
+      text-align: center;
+      color: grey;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    form {
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+    }
+
+    button {
+      padding: 10px;
+      height: 35px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .social-icons img {
+      margin: 10px;
+      width: 30px;
+      height: 30px;
+      border-radius: 3px;
+    }
+
+    .horizontal-line {
+      border-top: 5px solid white;
+      margin: 10px 0;
+      /* Adjust margin as per your requirement */
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Chandu's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#edu">Education</a></li>
+          <li><a href="#exe">Experience</a></li>
+          <li><a href="#pro">Projects</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#con">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        Hi, My name is <br /><span class="purple" style="font-family: 'EB Garamond', serif; font-size: 50px">Chandra
+          Shekar Reddy
+        </span>
+        <div>and I am a passionate</div>
+        <span id="element"></span>
+        <div class="buttons">
+          <a href="https://drive.google.com/file/d/1qasjVkKspnsP_A1ToaJ5_AcjZ7Eigi9L/view?usp=sharing"
+            target="_blank"><button class="btn">Download Resume</button></a>
+          <a href="https://github.com/ChandraShekarReddy2001" target="_blank"><button class="btn">Visit
+              GitHub</button></a>
+        </div>
+      </div>
+      <div class="rightSection">
+        <img src="developer-illustration.webp" alt style="margin: 50px 0" />
+      </div>
+    </section>
+    <hr />
+    <section id="about" class="secondSection" style="margin: 0px 119.667px; padding: 40px;">
+      <br />
+      <div class="box">
+        <div class="vertical">
+          <div class="container">
+            <div class="container">
+              <div class="column-left">
+                <!-- Content for the left half -->
+                <img style="height: 400px; width: 311px" src="chandu1.jpg" />
+              </div>
+              <div class="column-right" style="margin-left: 25px">
+                <h1 style="margin-bottom: 5px; margin-top: 12px">About Me</h1>
+                <p>
+                  Pursuing an undergraduate degree at Sreenidhi Institute of
+                  Science and Technology as an electronics and communication
+                  engineer. I am very keen on learning new technologies and
+                  keeping myself updated all the time. I am driven by passion.
+                  I thrive on challenges and constantly set goals for myself,
+                  so I have something to strive towards. I am a very
+                  hardworking and enthusiastic person, and I have very high
+                  expectations of myself. I’m confident in my ability to work
+                  hard and deliver quality results in order to showcase my
+                  skills and expertise.
+                  <br />
+                  <br />
+                  I am a dedicated and enthusiastic individual with a passion
+                  for web development . With a strong
+                  foundation in HTML, CSS, and JavaScript, I thrive on
+                  creating visually appealing and user-friendly websites. My
+                  goal is to leverage my skills and creativity to contribute
+                  to innovative projects and make a positive impact in the
+                  digital realm.
+                </p>
+                <ul style="
+                      margin-bottom: 24px;
+                      margin-top: 12px;
+                      margin-left: 25px;
+                    ">
+                  <li>Optimistic</li>
+                  <li>Creative</li>
+                  <li>Self-motivated</li>
+                  <li>Team player</li>
+                </ul>
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section id="exe" class="secondSection" style="margin: 0px 119.667px; padding: 40px;"">
+        <span class=" text-grey"> what I have done so far </span>
+      <h1>Work Experience</h1>
+      <br />
+      <div class="box">
+        <div class="vertical">
+          <div class="vertical-title">
+            <b style="font-size: 22px">Web Developer Intern</b> &nbsp;
+            (10 Nov 23 - 10 Nov 23)<br />
+            @Bharat Intern &nbsp;&nbsp;<i style="color: gray">(Work from home)</i>
+          </div>
+          <div class="vertical-desc">
+            As part of my Internship It is a virtual Internship I have developed a user-friendly registration form and
+            login and another is a blog website with dynamic content creation and display functionality and validation
+            using HTML, CSS, Bootstrap, Node.js, and MongoDB. And storing the data in backend using mongodb. <br />
+            <b>Skills:</b> HTML, CSS, Node.js, Express.js, MongoDB, Bootstrap ·
+          </div>
+          <br />
+          <div class="vertical-title">
+            <b style="font-size: 22px">SQL Intern</b> &nbsp; (1st Oct 2023 - 30 Oct 2023)<br />
+            @V.J Training Center PVT LTD &nbsp;&nbsp;<i style="color: gray">(Work from home)</i>
+          </div>
+          <div class="vertical-desc">
+            In SQL Programming I gained hands-on experience and proficiency in fundamental SQL concepts, including data
+            retrieval, querying, and database management. And Developed and executed SQL queries for data retrieval,
+            filtering, and analysis, contributing to efficient and organized data management. <br />
+            <b>Skills:</b> Structured Query Language(SQL), MySQL·
+          </div>
+          <br />
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <section id="edu" class="secondSection" style="margin: 0px 119.667px; padding: 40px;"">
+        <br />
+        <div class=" box">
+      <div class="vertical">
+        <h1>Educational Qualifications</h1>
+        <br>
+        <div class="container">
+          <div class="container">
+            <table>
+              <thead>
+                <tr>
+                  <th style="color: rgb(15, 15, 75)">Qualification</th>
+                  <th style="color: rgb(15, 15, 75)">Institution</th>
+                  <th style="color: rgb(15, 15, 75)">Board</th>
+                  <th style="color: rgb(15, 15, 75)">Stream</th>
+                  <th style="color: rgb(15, 15, 75)">Score</th>
+                  <th style="color: rgb(15, 15, 75)">Year</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Bachelor's Degree</td>
+                  <td>Sreenidhi Institute of Science and Technology</td>
+                  <td>Autonomous (Affiliated to jntuh)</td>
+                  <td>ECE</td>
+                  <td>66%</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>Intermediate</td>
+                  <td>Sri Chaithanya Junior College</td>
+                  <td>TSBIE</td>
+                  <td>MPC</td>
+                  <td>93.6%</td>
+                  <td>2020</td>
+                </tr>
+                <tr>
+                  <td>Schooling</td>
+                  <td>Vijetha techno School</td>
+                  <td>SSC</td>
+                  <td></td>
+                  <td>73%</td>
+                  <td>2018</td>
+                </tr>
+                <!-- Add more rows for additional qualifications -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <hr />
+    <section id="pro" class="secondSection" style="margin: 0px 119.667px; padding: 40px;"">
+        <h1>Projects</h1>
+        <br />
+        <div class=" box">
+      <div class="vertical">
+        <div class="vertical-title">
+          <b style="font-size: 22px">Web development Sreenidhi University</b>
+          &nbsp; (April 2023) &nbsp;
+          <a href="https://chandrashekarreddy2001.github.io/University-webside/" target="_blank"><button
+              style="border-radius: 3px;">Website</button></a>
+          <a href="https://github.com/ChandraShekarReddy2001/University-webside.git" target="_blank"><button
+              style="border-radius: 3px;">GitHub</button></a>
+          <br />
+          University Website&nbsp;&nbsp;
+        </div>
+        <div class="vertical-desc">
+          As part of a personal project, I designed and developed an university website for Sreenidhi University. The
+          website serves as an online platform for students to know about the university and its quality of education it
+          provides and view the available Courses that we offer and the facilities that we provide. using | HTML, CSS,
+          Bootstrap and JavaScript </b>
+        </div>
+        <br />
+        <div class="vertical-title">
+          <b style="font-size: 22px">Studentfolio</b> &nbsp; (June 2023) &nbsp;
+          <a href="#" target="_blank"><button style="border-radius: 3px;">Website</button></a>
+          <button style="border-radius: 3px;">GitHub</button>
+          <br />
+          Portfolio Website&nbsp;&nbsp;
+        </div>
+        <div class="vertical-desc">
+          The Portfolio Website I developed is a showcase of my skills,
+          experiences, and projects. It serves as an online presence to
+          present myself to potential clients or employers. Throughout the
+          project, I learned the importance of responsive design, user
+          experience, and cross-browser compatibility. Building this
+          Portfolio Website allowed me to demonstrate my web development
+          skills and professionalism while showcasing my projects in an
+          engaging manner.<br />
+          Designed and developed a portfolio website using
+          <b>HTML, CSS, and JavaScript.</b>
+        </div>
+        <br />
+      </div>
+      </div>
+    </section>
+    <hr />
+
+    <section id="skill" class="secondSection" style="margin: 0px 119.667px; padding: 40px;"">
+        <br />
+        <div class=" box">
+      <div class="vertical">
+        <h1>Skills</h1>
+        <br>
+        <div class="container">
+          <section class="skills-section">
+            <div class="skills-subsection">
+              <h3 style="margin-bottom: 10px">Professional Skills</h3>
+              <ul style="columns: 2;
+                  -webkit-columns: 2; /* For Safari and older versions of Chrome */
+                  -moz-columns: 2;">
+                <li>Programming Languages: C, C ++, JAVA</li>
+                <li>Web Technologies: HTML,CSS, JavaScript</li>
+                <li>Frameworks: Bootstrap</li>
+                <li>Databases: MYSQL</li>
+                <li>CS Subjects: DBMS, OS, Computer
+                  Architecture</li>
+                <li>Data Structures and OOPS concepts</li>
+                <!-- Add more professional skills as needed -->
+              </ul>
+            </div>
+            <br>
+            <div class="skills-subsection">
+              <h3 style="margin-bottom: 10px">Soft Skills</h3>
+              <ul>
+                <li>Communication</li>
+                <li>Leadership</li>
+                <li>Negotiation</li>
+                <li>Team Management</li>
+              </ul>
+            </div>
+          </section>
+          <div class="horizontal-line"></div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <hr />
+    <section id="con" class="secondSection" style="margin: 0px 119.667px; padding: 40px;"">
+        <br />
+        <div class=" box">
+      <div class="vertical">
+        <div class="container">
+          <div class="column-left">
+            <h1>Contact Me</h1>
+            <br>
+            <div class="container">
+              <section class="skills-section">
+                <form style="margin-bottom: 20px;" id="contactForm" action="https://formspree.io/f/xwkgkbnw"
+                  method="POST">
+                  <label for="name">Name:</label>
+                  <input style="border-radius: 6px;" type="text" id="name" name="name" required>
+
+                  <label for="email">Email:</label>
+                  <input style="border-radius: 6px;" type="email" id="email" name="email" required>
+
+                  <label for="message">Message:</label>
+                  <textarea style="border-radius: 4px;" id="message" name="message" rows="4" required></textarea>
+
+                  <button style="border-radius: 6px; 
+                      margin-top: 10px;" type="submit">Submit</button>
+                </form>
+              </section>
+            </div>
+          </div>
+          <div style="padding: 75px 80px;" class="column-right">
+            <b>Mobile Number:</b>
+            <div style="margin-top: 10px; margin-bottom: 20px;  ">
+              <Address>8523076850</Address>
+            </div>
+            <b>Address:</b>
+            <div style="margin-top: 10px; margin-bottom: 20px;">
+              <Address>Yamnampet, Gatkesar, hyderabad, Telangana, India, 501301</Address>
+            </div>
+            <div class="social-icons">
+              <b style="margin-top: 10px; padding-top: 5px;">Social media:</b></br>
+              <a href="https://www.instagram.com/_chandu_9618/" target="_blank"><img src="insta.png"
+                  alt="Instagram"></a>
+              <a href="mailto:chandrashekarreddy933@gmail.com" target="_blank"><img src="Gmail.webp" alt="Gmail"></a>
+              <a href="https://github.com/ChandraShekarReddy2001" target="_blank"><img src="GitHub.png"
+                  alt="GitHub"></a>
+              <a href="https://www.linkedin.com/in/kokkonda-chandra-shekar-reddy-976a46215/" target="_blank"><img
+                  src="linkedin.png" alt="LinkedIn"></a>
+              <a href="https://wa.me/8523076850" target="_blank"><img src="whatsapp.png" alt="LinkedIn"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h3>Chandu's Student Portfolio</h3>
+      </div>
+      <div class="footer-second">
+        <ul style="columns: 1;
+          -webkit-columns: 1;
+          -moz-columns: 1; padding: 5px; list-style: none;">
+          <a href="/">
+            <li style="padding: 3px; color: white;">Home</li>
+          </a>
+          <a href="#about">
+            <li style="padding: 3px; color: white;">About</li>
+          </a>
+          <a href="#exe">
+            <li style="padding: 3px; color: white;">Experience</li>
+          </a>
+          <a href="#edu">
+            <li style="padding: 3px; color: white;">Education</li>
+          </a>
+          <a href="#pro">
+            <li style="padding: 3px; color: white;">Projects</li>
+          </a>
+          <a href="#skill">
+            <li style="padding: 3px; color: white;">Skills</li>
+          </a>
+          <a href="#con">
+            <li style="padding: 3px; color: white;">Contact me</li>
+          </a>
+        </ul>
+      </div>
+      <div class="footer-third"></div>
+    </div>
+    <div class="footer-rights">
+      Copyright &#169; Chandusportfolio.com | All rights reserved
+    </div>
+  </footer>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed("#element", {
+      strings: ["Student", "Web Developer", "Java Developer"],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+
+</html>
